@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Sl.No</th>
+        <th scope="col">Task</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of taskList let i=index">
+        <th scope="row">{{i}}</th>
+        <td>{{task}}</td>
+        <td>
+          <button type="submit" (click)="delete(i)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,4 @@
+<div class="main">
+    <input type="text" #text (value)="newTask" (keyup)="updateText(text.value)"><br><br>
+    <button type="submit" (click)="addTask()">Add Task</button>
+</div>
